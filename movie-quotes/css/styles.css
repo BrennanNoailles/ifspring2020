@@ -1,0 +1,23 @@
+h1{
+	text-align: center;
+	padding: 10px 40px 10px 40px;
+}
+
+body{
+    background-color:#FFFFFF;
+    color:#0E1116;
+    font-family: Helvetica;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.peter-venkman{
+	color:red;
+	font-weight: bold;
+}
+
+
+.i{
+	font-style: italic;
+	color:#add8e6;
+}
