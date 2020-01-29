@@ -1,0 +1,90 @@
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+div{
+	padding: 20px;
+}
+.Roboto{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+.subtitle{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color:##615f5f;
+}
+.small-description{
+	font-family: 'Roboto', sans-serif;
+}
+.examplenorm{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	font-weight: normal;
+}
+.examplebold{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	font-weight: bold;
+}
+.exampleitalic{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	font-style: italic;
+}
+.examplespread{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	letter-spacing: .2em;
+}
+
+.exampletight{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	letter-spacing: -.07em;
+}
+.exampleupdec{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	text-decoration: overline;
+}
+.examplethroughdec{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	text-decoration: line-through;
+}
+
+.exampleunderline{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	text-decoration: underline;
+}
+.upper{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	text-transform: uppercase;
+}
+.lower{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	text-transform: lowercase;
+}
+
+.capital{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	color:#9b9b9b;
+	text-transform: capitalize;
+}
