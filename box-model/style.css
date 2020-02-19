@@ -1,0 +1,135 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,p{
+	margin-top: 0;
+}
+
+h1{
+	margin-top: 4px;
+	font-size: 80px;
+	margin-bottom: -4px;
+	letter-spacing: 2px;
+	
+}
+h2{
+	font-size: 32px;
+}
+
+header{
+	background-image: url("https://picjumbo.com/wp-content/uploads/st-pauls-cathedral-london-2210x1475.jpg");
+	text-align: center;
+	height: 480px;
+	padding-top: 147px;
+	box-sizing: border-box;
+	font-family: 'Archivo Narrow', sans-serif;
+}
+.sectionheader{
+	font-size: 40px;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 30px;
+	font-weight: bold;
+	letter-spacing: 1px;
+
+}
+.paragraphs{
+	font-size: 20px;
+	margin-left: 280px;
+	margin-right: 265px;
+	letter-spacing: -.85px;
+	line-height: 1.27;
+}
+#bigimage{
+	float: right;
+	margin-top: .3rem;
+	margin-left: 3rem;
+	margin-right: 23.3rem;
+}
+.adjimg{
+	padding-top: 50px;
+	margin-bottom: 0px;
+	background-color: #B0D7FF;
+	height: 665px;
+
+}
+.grid{
+	padding-top: 49px;
+	height: 640px;
+	background-color: #ADACB5;
+	margin-bottom: -50px;
+
+}
+#column{
+	margin-left: 85px;
+	/*width: 450px;*/
+}
+
+.left{
+	margin-left: 280px;
+}
+.caption{
+	/*margin-left: 10px;
+	/*float: left;*/*/
+	width: 447px;
+	height: 200px;
+	font-size: 20px;
+	padding-right: 0px;
+	/*clear: left;*/
+	padding-left: 212px;
+	padding-top: 2.5px;
+	letter-spacing: .6px;
+
+}
+.smig{
+	float: left;
+	/*width: 200px;*/
+}
+.descrip{
+	margin-top: 6px;
+	font-size: 18px;
+	letter-spacing: -.1px;
+	width: 208px;
+	line-height: 1.4;
+	}
+.right{
+	margin-top: -304px;
+	margin-left: 480px;
+	/*float: right;*/
+	/*padding-left: 300px;*/
+}
+.pluss{
+	padding-top: 97px;
+}
+.mid{
+	margin-top: 74.5px;
+}
+.bottom{
+	margin-left: -279px;
+	margin-top: 74.5px;
+}
+#end{
+    margin-top: 114px;
+    background-color: #EAE8FF;
+    padding-top: 49px;
+    padding-bottom: 72px;
+}
+.conclu{
+	text-align: center;
+    font-size: 27px;
+    width: 721px;
+    margin-left: 482px;
+    letter-spacing: -.5px;
+
+}
+.footer{
+	font-size: 18px;
+    padding-top: 41px;
+    padding-left: 363px;
+    padding-bottom: 35px;
+    background-color: #D8D5DB;
+}
