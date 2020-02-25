@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Buttons &mdash; Brennan Noailles</title>
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+
+		<!-- amazon icon -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<!-- lyft icon -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+		<!-- apple icon -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+		<style>
+
+			body {
+				color: #333;
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+
+			main {
+				margin: 40px;
+			}
+
+			h1 {
+			 	font-size: 30px;
+			 	margin-bottom: 40px;
+			}
+
+			.button_container {
+				border: 1px solid #ddd;
+				margin: 0 10px 10px 0;
+				padding: 20px;
+				width: 300px;
+				height: 300px;
+				float: left;
+				overflow: hidden;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+			/* spotify */
+			a#btn_spotify {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+				background-color: #2ebd59;
+				border: 2px solid #2ebd59;
+				color: #fff;
+				font-size: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+				transition: all .5s;
+			}
+
+			a#btn_spotify:hover {
+				background-color: #fff;
+				border: 2px solid #000;
+				color: #000;
+			}
+
+
+			/* amazon */
+			a#btn_amazon {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 60px;
+				transition: all .2s;
+			}
+
+			a#btn_amazon:hover {
+				background-color: #fc9a18;
+			}
+
+
+			/* twitter */
+			a#btn_twitter {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+				background-color: #56cdf1;
+				color: #fff;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			a#btn_twitter:hover {
+
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+				background: rgb(46,191,236); /* Old browsers */
+				background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+			}
+
+
+			/* indiegogo */
+			a#btn_indiegogo {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #eb1478;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: -2px;
+				transition: all .2s;
+			}
+
+			a#btn_indiegogo:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				z-index: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: #eb1478;
+				transition: all .5s;
+			}
+
+			a#btn_indiegogo:hover {
+				color: #fff;
+			}
+
+			a#btn_indiegogo:hover:before {
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+
+			a#btn_indiegogo span {
+				position: relative;
+				z-index: 10;
+            }
+
+
+			/* farfetch */
+            a#btn_farfetch{
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+            }
+
+            .Farfetch{
+                margin: auto;
+				margin-top: 105px;
+                
+                width: 200px;
+                height: 50px;
+                transition: all .5s;
+            }
+
+            a#btn_farfetch:hover {
+            	filter: invert(1);
+            }
+                
+            
+			/* lyft */
+			a#btn_lyft {
+				display: inline-block;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 100px;
+				font-size: 50px;
+				color: rgb(239, 28, 180);
+				transition: all .5s;
+			}
+
+			a#btn_lyft:hover {
+				background-color: #fff;
+				color: rgb(0, 0, 0);
+			}
+
+
+			/* apple */
+			a#btn_apple {
+				display: inline-block;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 80px;
+				font-size: 60px;
+				color: rgb(190, 190, 190);
+				transition: all .5s;
+			}
+
+			a#btn_apple:hover {
+				background-color: #fff;
+				color: rgb(238, 238, 238);
+			}
+
+
+			/* missouri botanical garden */
+			a#btn_mbg {
+				display: inline-block;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 120px;
+				font-family: Bangla mn, lao mn;
+				text-decoration: none;
+				color: rgb(60, 111, 34);
+                font-size: 15px;
+                padding: 1px 0.2px 1px 0.2px;
+			}
+
+			a#btn_mbg:hover {
+				background-color: rgb(60, 111, 34);
+				color: rgb(255, 255, 255);
+				font-size: 15px;
+				padding: 2px 1px 2px 1px;
+				border-radius: 1px;
+			}
+
+
+			#btn_cocacola {
+                display: inline-block;
+                
+                margin-top: 90px;
+                
+               
+                background-color: #fff;
+              
+                border-radius: 30px;
+                
+                color: rgb(244, 0, 0);
+                
+                
+                outline: none;
+               
+            }
+            
+            .coca{
+                margin: auto;
+				
+                
+                width: 150px;
+                height: 50px;
+                transition: all .5s;
+            }
+
+			#btn_cocacola:hover {
+				color: lavender;
+                transition: all .5s;
+                padding: 10px;
+                border-radius: 10px;
+                border: 2px solid rgb(244, 0, 0);
+            }
+            
+            #btn_army{
+                display: block;           
+                background-color: #fff;
+                border-radius: 30px;
+                margin-top: 90px;
+                outline: none;
+                position: relative;
+                height: 50px;
+                width: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                z
+            }
+            .army{
+                top: 0;
+                left: 0;
+                margin: auto;
+				
+                position: absolute;
+                width: 150px;
+                height: 50px;
+                transition: all .5s;
+            }
+            .army:last-of-type{
+                opacity: 0;
+                
+            }
+
+            #btn_army:hover .army:last-of-type {
+				opacity: 1;
+                
+            }
+
+            a#btn_oldnavy {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 50%;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 20px 5px 20px;
+				background-color: #2f364a;
+				color: #fff;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+                text-decoration: none;
+                letter-spacing: -.2px;
+			}
+
+			a#btn_oldnavy:hover {
+
+				color:  #2f364a;
+				background-color: #ffffff;
+            }
+            a#btn_electra{
+                display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 105px;
+				padding: 8px 20px 5px 20px;
+				background-color:#00a8cb;
+				color: #fff;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: lighter;
+                text-decoration: none;
+                letter-spacing: -.2px;
+                border: 2px solid #00a8cb;
+
+            }
+            a#btn_electra:hover{
+                background-color:#fff;
+                color: #00a8cb;
+                border: 2px solid #00a8cb;
+
+
+            }
+
+            a#btn_fb{
+                
+               
+                background-size: 50px 50px;
+                margin-top: 90px;
+                display: block;
+                height: 50px;
+                outline: none;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+                                
+                width: 50px;
+                border:3px solid #fff;
+            }
+            .fb{
+                margin: auto;
+				
+                
+                width: 50px;
+                height: 50px;
+                transition: all .5s;
+                
+            }
+            a#btn_fb:hover .fb{
+                opacity: .85;
+            }
+
+            a#btn_fb:hover{
+                padding-top: -5px;
+                border: 3px solid #1e4ed3cb;
+                
+                border-radius: 8px;
+
+            }
+            a#btn_insta{
+                
+               
+                
+                margin-top: 80px;
+                display: block;
+                height: 71px;
+                outline: none;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                                
+                width: 71px;
+                border:3px solid #fff;
+            }
+            .insta{
+                top: 0;
+                left: 0;
+                margin: auto;
+				
+                position: absolute;
+               
+				
+                
+                width: 71px;
+                height: 71px;
+                transition: all .8s;
+                
+            }
+            .insta:last-of-type{
+                opacity: 0;
+                
+            }
+            
+            #btn_insta:hover .insta:last-of-type {
+				opacity: 1;
+                
+            }
+
+            #btn_insta:hover .insta:first-of-type {
+				opacity: 0;
+                
+            }
+            a#btn_moto{
+                
+               
+                
+                margin-top: 110px;
+                display: block;
+                height: 28.5px;
+                outline: none;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                                
+                width: 150px;
+                border:3px solid #fff;
+            }
+            .moto{
+                top: 0;
+                left: 0;
+                margin: auto;
+				
+                position: absolute;
+               
+				
+                
+                width: 150px;
+                height: 28.5px;
+                transition: all .5s;
+                
+            }
+            .moto:last-of-type{
+                opacity: 0;
+                
+            }
+            
+            #btn_moto:hover .moto:last-of-type {
+				opacity: 1;
+                
+            }
+
+            a#btn_npr{               
+                margin-top: 100px;
+                display: block;
+                height: 50px;
+                outline: none;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                                
+                width: 150px;
+                border:3px solid #fff;
+                transition: all .5s;
+            }
+            #btn_npr:hover{
+                filter:sepia(1);
+            }
+
+            a#btn_fore{               
+                margin-top: 95px;
+                display: block;
+                height: 40px;
+                
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                font-size: 15px;
+                width: 150px;
+                border:3px solid #fff;
+                transition: all .5s;
+               	box-sizing: border-box;
+				border-radius: 4px;
+                
+                color: #fff;
+				padding: 9px 30px 0 30px;
+				background-color: #002249;
+				font-family: "proxima-nova",sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+            }
+            .fore{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                opacity: 0;
+                top: 0px;
+                left: 0px;
+                margin-left: 40%;
+                margin-top: 1%;
+
+                
+            }
+            a#btn_fore:hover{
+                color: #002249 ;
+            }
+
+            a#btn_fore:hover .fore:first-of-type{
+                opacity: 1;
+
+            
+            }
+            #btn_molly{
+                display: block;           
+                background-color: #fff;
+                /* border-radius: 30px; */
+                margin-top: 105px;
+                outline: none;
+                position: relative;
+                height: 42px;
+                width: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+            .molly{
+                top: 0;
+                left: 0;
+                margin: auto;
+				
+                position: absolute;
+                width: 150px;
+                height: 43px;
+                transition: all .5s;
+            }
+            .molly:last-of-type{
+                opacity: 0;
+                
+            }
+
+            #btn_molly:hover .molly:last-of-type {
+                opacity: 1;
+            }
+
+             #btn_molly:hover .molly:first-of-type {
+                opacity: 0;
+             }
+              
+             #btn_moo{
+                display: block;           
+                background-color: #fff;
+                /* border-radius: 30px; */
+                margin-top: 105px;
+                outline: none;
+                position: relative;
+                height: 48px;
+                width: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+            .moo{
+                top: 0;
+                left: 0;
+                margin: auto;
+				
+                position: absolute;
+                width: 150px;
+                height: 48px;
+                transition: all .5s;
+            }
+
+
+            @keyframes fade {
+                from {opacity: 1;}
+                to {opacity: 0;}
+            }
+            #btn_moo:hover .moo:last-of-type {
+                
+                animation-name: fade;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+            }
+            #btn_moo:hover .moo:first-of-type {
+                
+                opacity: 1;
+            }
+
+            a#btn_color {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #333;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: -2px;
+				transition: all .5s;
+			}
+
+			
+
+			a#btn_color:hover {
+                        
+                background: red;
+                background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+                background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+                background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+                background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 30px;
+            }
+            #btn_tesla{
+                display: inline-block;
+                margin-top: 100px;
+                background-color: #fff;
+                border-radius: 8px;
+                color: rgb(244, 0, 0);
+                outline: none;
+                padding: 13px;
+                border-radius: 10px;
+                border: 2px solid rgb(0, 0, 0);
+                transition: all .9s;
+            }
+            
+            .tesla{
+                margin: auto;
+                width: 150px;
+                height: 19.65px;
+                
+            }
+            @keyframes charge {
+                    0%{background-position:0% 50%}
+                    50%{background-position:100% 50%}
+                    100%{background-position:0% 50%}
+                }
+
+			#btn_tesla:hover{
+                
+				
+                
+                /* padding: 13px;
+                border-radius: 10px;
+                border: 2px solid rgb(0, 0, 0); */
+                background: linear-gradient(270deg, #9aa09b, #6ae37e, #11a029);
+                background-size: 100% 100%;
+
+                /* -webkit-animation: charge 5s ease infinite;
+                animation: charge 5s ease infinite; */
+                animation-name: charge;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+
+                
+
+            }
+            #btn_nike{
+                display: block;           
+                background-color: #fff;
+                border-radius: 30px;
+                margin-top: 100px;
+                outline: none;
+                position: relative;
+                height: 50px;
+                width: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                z
+            }
+            .nike{
+                top: 0;
+                left: 0;
+                margin: auto;
+				
+                position: absolute;
+                width: 150px;
+                height: 50px;
+                transition: all .5s;
+            }
+            .nike:last-of-type{
+                opacity: 0;
+                
+            }
+
+            #btn_nike:hover .nike:last-of-type {
+				opacity: 1;
+                
+            }
+            a#btn_ofa {
+                display: inline-block;
+                position: relative;
+                margin: auto;
+                margin-top: 100px;
+                padding: 8px 16px;
+                background-color: #fff;
+                color:#1f2b39;
+                font-family: 'Times New Roman', sans-serif;
+                font-size: 27px;
+                text-decoration: none;
+            }
+            a#btn_ofa:hover{
+                text-decoration: underline;
+                text-decoration-color: #feff00;
+                
+            }
+            a#btn_ideo {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 5px 30px 0 30px;
+				border: 2px solid #fc9a18 ;
+				color: black;
+				font-size: 22px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+                text-decoration: none;
+                transition: all .5s;
+                font-weight: lighter;
+			}
+
+			a#btn_ideo:hover {
+                background-color: #239790;
+                opacity: .8;;
+				
+			}
+            
+}
+
+                
+
+
+
+
+
+}
+
+            }
+            
+
+
+        }
+
+		</style>
+
+	</head>
+
+
+
+	<body>
+		
+		<main>
+
+			<h1>Button Styling &mdash; Brennan Noailles</h1>
+			
+			<div class="button_container">
+				<a href="http://www.spotify.com" target="_blank" id="btn_spotify">Spotify</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.amazon.com" target="_blank" id="btn_amazon"><i class="fab fa-amazon"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.twitter.com" target="_blank" id="btn_twitter">twitter</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.indiegogo.com" target="_blank" id="btn_indiegogo"><span>indiegogo</span></a>
+            </div>
+            
+            <div class="button_container">
+                <a href="https://www.farfetch.com" target="_blank" id="btn_farfetch"><img class="Farfetch" src="Farfetch.png"></a>
+			</div>
+			
+			<div class="button_container">
+                <a href="https://www.lyft.com" target="_blank" id="btn_lyft"><i class="fab fa-lyft"></i></a>
+			</div>
+			
+			<div class="button_container">
+                <a href="https://www.apple.com" target="_blank" id="btn_apple"><i class="fab fa-apple"></i></a>
+			</div>
+		
+			<!-- this uses the pic from their website - doesn't rly work !!!!
+			<div class="button_container">
+                <a href="https://www.missouribotanicalgarden.org" target="_blank" id="btn_mbg"><img src="https://www.missouribotanicalgarden.org/Portals/0/Images/logo.gif?ver=2011-10-24-173805-843"></img></a>
+			</div> -->
+
+			<div class="button_container">
+                <a href="https://www.missouribotanicalgarden.org" target="_blank" id="btn_mbg">MISSOURI BOTANICAL GARDEN</a>
+			</div>
+
+			<div class="button_container">
+                <a href="https://us.coca-cola.com/" target="_blank" id="btn_cocacola"><img class="coca" src="coca.png"> </a>
+            </div>
+            
+            <div class="button_container">
+                <a href="https://www.army.mil/" target="_blank" id="btn_army"><img class="army" src="army.png"><img class="army" src="armyh.png"> </a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://oldnavy.gap.com/" target="_blank" id="btn_oldnavy">OLD NAVY </a>
+            </div>
+
+            <div class="button_container">
+                <a href="https://www.electrabike.com/" target="_blank" id="btn_electra">ELECTRA </a>
+            </div>
+
+            <div class="button_container">
+                <a href="facebook.com" target="_blank" id="btn_fb"><img class="fb" src="fb.png"> </a>
+            </div>
+            <div class="button_container">
+                <a href="instagram.com" target="_blank" id="btn_insta"><img class="insta" src="insta.svg.svg"><img class="insta" src="instac.png"> </a>
+            </div>
+           
+            <div class="button_container">
+                <a href="https://watch.motortrend.com/" target="_blank" id="btn_moto"><img class="moto" src="moto.png"><img class="moto" src="moto2.png"> </a>
+            </div>
+
+            <div class="button_container">
+                <a href="npr.org" target="_blank" id="btn_npr"><img class="npr" src="npr.svg"></a>
+            </div>
+
+            <div class="button_container">
+                <a href="fore.org" target="_blank" id="btn_fore"><img class="fore" src="https://foreflight-www.s3.amazonaws.com/assets/images/logo-mark.png">ForeFlight</a>
+            </div>
+            <div class="button_container">
+                <a href="https://www.mollyjogger.com/" target="_blank" id="btn_molly"><img class="molly" src="molly.png"><img class="molly" src="molly2.png"></a>
+            </div>
+            <div class="button_container">
+                <a href="https://www.moo.com/us/" target="_blank" id="btn_moo"><img class="moo" src="moo.png"><img class="moo" src="moo2.png"></a>
+            </div>
+            <div class="button_container">
+                <a href="https://thecolorrun.com/" target="_blank" id="btn_color">THE COLOR RUN</a>
+            </div>
+            <div class="button_container">
+                <a href="tesla.com" target="_blank" id="btn_tesla"><img class="tesla" src="tesla.png"></a>
+            </div>
+            <div class="button_container">
+                <a href="nike.com" target="_blank" id="btn_nike"><img class="nike" src="nike.jpg"><img class="nike" src="nike2.jpg"></a>
+            </div>
+            <div class="button_container">
+                <a href="https://allontheline.org/" target="_blank" id="btn_ofa">ALL ON THE LINE</a>
+            </div>
+            <div class="button_container">
+                <a href="https://www.ideo.org/" target="_blank" id="btn_ideo">IDEO</a>
+            </div>
+
+
+		</main>	
+
+	</body>
+</html>
