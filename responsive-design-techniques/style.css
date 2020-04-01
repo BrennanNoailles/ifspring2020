@@ -2,9 +2,10 @@ body {
 	font-family: Arial, Sans-serif;
 	font-size: 12pt;
     line-height: 1.4;
-    text-align: center;
     width: 800px;
     background-color: #eaf6ff ;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
