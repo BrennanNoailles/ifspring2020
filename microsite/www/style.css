@@ -1,0 +1,93 @@
+html, body {
+    font-family: "Roboto";
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: -15px;
+}
+
+.flat{
+    font-family: Helvetica, sans-serif;
+}
+/* .animate-intro{
+
+        opacity: 0;
+
+} */
+.first {
+    position: relative;
+}
+.caption{
+    font-size: 24px;
+    
+}
+.contentFirst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -100px;
+}
+
+.vman {
+    width: 150px;
+    height: 150px;
+}
+
+
+.second {
+    position: relative;
+    margin-left: 0px;
+    margin-top: -10px;
+
+}
+.third {
+    position: relative;
+    margin-left: 0px;
+    margin-top: -10px;
+
+}
+.contentSecond {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contentThird{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.nav {
+    color:black;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-right: 0;
+    margin-top: 0;
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+    float: bottom;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+.bump{
+    margin-top: -30px;
+}
